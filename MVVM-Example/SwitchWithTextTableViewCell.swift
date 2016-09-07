@@ -24,7 +24,7 @@ import UIKit
 
 // MARK: SwitchWithTextTableViewCellDelegate: TextPresentable, SwitchPresentable
 
-protocol SwitchWithTextTableViewCellDelegate: TextPresentable, SwitchPresentable {
+protocol SwitchWithTextTableViewCellDelegate: TextPresentable, SwitchPresentable, ImagePresentable {
 }
 
 // MARK: - SwitchWithTextTableViewCell: UITableViewCell
@@ -35,6 +35,7 @@ class SwitchWithTextTableViewCell: UITableViewCell {
     
     @IBOutlet weak var label: UILabel!
     @IBOutlet weak var switchToggle: UISwitch!
+    @IBOutlet weak var imageV: UIImageView!
     
     // MARK: Private Variables
     
@@ -53,6 +54,8 @@ class SwitchWithTextTableViewCell: UITableViewCell {
         
         switchToggle.isOn = delegate.switchOn
         switchToggle.onTintColor = delegate.switchColor
+        
+        imageV.image = UIImage(named: delegate.imageName)
     }
     
     // MARK: Actions

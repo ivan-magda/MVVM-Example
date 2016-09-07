@@ -20,42 +20,9 @@
  * THE SOFTWARE.
  */
 
-import UIKit
+import Foundation
 
-// MARK: MinionModeViewModel: SwitchWithTextTableViewCellDelegate
-
-struct MinionModeViewModel: SwitchWithTextTableViewCellDelegate {
+protocol ImagePresentable {
+    var imageName: String { get }
 }
 
-// MARK: MinionModeViewModel: TextPresentable
-
-extension MinionModeViewModel: TextPresentable {
-    var text: String { return "Minion Mode" }
-    var textColor: UIColor { return .black }
-    var font: UIFont { return .systemFont(ofSize: 17.0) }
-}
-
-// MARK: MinionModeViewModel: SwitchPresentable
-
-extension MinionModeViewModel: SwitchPresentable {
-    
-    var switchOn: Bool { return true }
-    var switchColor: UIColor { return .yellow }
-    
-    func onSwitchToggleOn(on: Bool) {
-        if on {
-            print("The minions are here to stay!!!")
-        } else {
-            print("The minions went out to play!")
-        }
-    }
-    
-}
-
-// MARK: MinionModeViewModel: ImagePresentable
-
-extension MinionModeViewModel: ImagePresentable {
-    var imageName: String {
-        return "minion"
-    }
-}

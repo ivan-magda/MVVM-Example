@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7525430D1D80577F00C457A1 /* ImagePresentable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7525430C1D80577F00C457A1 /* ImagePresentable.swift */; };
 		75DAAD6F1D800CDB00BAC0FE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75DAAD6E1D800CDB00BAC0FE /* AppDelegate.swift */; };
 		75DAAD711D800CDB00BAC0FE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75DAAD701D800CDB00BAC0FE /* ViewController.swift */; };
 		75DAAD741D800CDB00BAC0FE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 75DAAD721D800CDB00BAC0FE /* Main.storyboard */; };
@@ -20,6 +21,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		7525430C1D80577F00C457A1 /* ImagePresentable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImagePresentable.swift; sourceTree = "<group>"; };
 		75DAAD6B1D800CDB00BAC0FE /* MVVM-Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "MVVM-Example.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		75DAAD6E1D800CDB00BAC0FE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		75DAAD701D800CDB00BAC0FE /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -114,6 +116,7 @@
 			children = (
 				75DAAD8C1D80192D00BAC0FE /* TextPresentable.swift */,
 				75DAAD901D801BB100BAC0FE /* SwitchPresentable.swift */,
+				7525430C1D80577F00C457A1 /* ImagePresentable.swift */,
 				75DAAD861D80172D00BAC0FE /* CellReuseIdentifierlabel.swift */,
 			);
 			name = Protocols;
@@ -201,6 +204,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				75DAAD871D80172D00BAC0FE /* CellReuseIdentifierlabel.swift in Sources */,
+				7525430D1D80577F00C457A1 /* ImagePresentable.swift in Sources */,
 				75DAAD911D801BB100BAC0FE /* SwitchPresentable.swift in Sources */,
 				75DAAD711D800CDB00BAC0FE /* ViewController.swift in Sources */,
 				75DAAD841D80124100BAC0FE /* SwitchWithTextTableViewCell.swift in Sources */,
@@ -372,6 +376,7 @@
 				75DAAD7F1D800CDB00BAC0FE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

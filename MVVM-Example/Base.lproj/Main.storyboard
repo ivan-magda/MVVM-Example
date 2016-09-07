@@ -39,15 +39,25 @@
                                                         <action selector="onSwitchToggle:" destination="i7Q-Pj-ogk" eventType="valueChanged" id="fCW-qf-CPQ"/>
                                                     </connections>
                                                 </switch>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="men-th-PIF">
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="38" id="Hls-uK-8eb"/>
+                                                        <constraint firstAttribute="width" constant="38" id="gLG-s6-XLw"/>
+                                                    </constraints>
+                                                </imageView>
                                             </subviews>
                                             <constraints>
+                                                <constraint firstItem="men-th-PIF" firstAttribute="centerY" secondItem="2lf-Pz-H1K" secondAttribute="centerY" id="BR7-He-95v"/>
                                                 <constraint firstItem="CuE-Hb-x9R" firstAttribute="centerY" secondItem="2lf-Pz-H1K" secondAttribute="centerY" id="KYJ-Db-ZMb"/>
+                                                <constraint firstItem="men-th-PIF" firstAttribute="leading" secondItem="2lf-Pz-H1K" secondAttribute="leading" constant="15" id="Qbj-bV-eVd"/>
                                                 <constraint firstItem="trz-CN-y2g" firstAttribute="centerY" secondItem="2lf-Pz-H1K" secondAttribute="centerY" id="Woh-V4-cmC"/>
-                                                <constraint firstItem="trz-CN-y2g" firstAttribute="leading" secondItem="2lf-Pz-H1K" secondAttribute="leading" constant="15" id="bA7-GW-9oR"/>
                                                 <constraint firstAttribute="trailing" secondItem="CuE-Hb-x9R" secondAttribute="trailing" constant="8" id="e0T-hJ-w2z"/>
+                                                <constraint firstItem="trz-CN-y2g" firstAttribute="leading" secondItem="men-th-PIF" secondAttribute="trailing" constant="8" symbolic="YES" id="qE9-zJ-OhJ"/>
+                                                <constraint firstItem="CuE-Hb-x9R" firstAttribute="leading" secondItem="trz-CN-y2g" secondAttribute="trailing" constant="8" symbolic="YES" id="ud3-Ui-NyU"/>
                                             </constraints>
                                         </tableViewCellContentView>
                                         <connections>
+                                            <outlet property="imageV" destination="men-th-PIF" id="X4h-aw-8gi"/>
                                             <outlet property="label" destination="trz-CN-y2g" id="w6Q-2H-IIZ"/>
                                             <outlet property="switchToggle" destination="CuE-Hb-x9R" id="IlX-Gr-VYm"/>
                                         </connections>
