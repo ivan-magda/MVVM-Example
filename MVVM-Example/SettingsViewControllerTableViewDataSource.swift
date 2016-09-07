@@ -22,57 +22,29 @@
 
 import UIKit
 
-// MARK: ViewController: UIViewController
+class SettingsViewControllerTableViewDataSource: NSObject {
 
-class ViewController: UIViewController {
-
-    // MARK: Variables
-    
-    @IBOutlet weak var tableView: UITableView!
-    
-    // MARK: Life Cycle
-    
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        configure()
+    enum Setting: Int, CaseCountable {
+        case MinionMode
     }
     
-    private func configure() {
-        tableView.dataSource = self
-        tableView.delegate = self
-        
-        tableView.backgroundColor = UIColor(colorLiteralRed: 243.0 / 255.0, green: 228.0 / 255.0,
-                                            blue: 200.0 / 255.0, alpha: 1.0)
-    }
-
 }
 
-// MARK: - ViewController: UITableViewDataSource -
-
-extension ViewController: UITableViewDataSource {
+extension SettingsViewControllerTableViewDataSource: UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 1
+        return Setting.caseCount
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let identifier = SwitchWithTextTableViewCell.reuseIdentifier
-        let cell = tableView.dequeueReusableCell(withIdentifier: identifier) as! SwitchWithTextTableViewCell
-        
-        cell.configure(withDelegate: MinionModeViewModel())
-        
-        return cell
+        switch Setting(rawValue: indexPath.row)! {
+        case .MinionMode:
+            let identifier = SwitchWithTextTableViewCell.reuseIdentifier
+            let cell = tableView.dequeueReusableCell(withIdentifier: identifier) as! SwitchWithTextTableViewCell
+            cell.configure(withDelegate: MinionModeViewModel())
+            
+            return cell
+        }
     }
     
 }
-
-// MARK: - ViewController: UITableViewDelegate -
-
-extension ViewController: UITableViewDelegate {
-    
-    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        tableView.deselectRow(at: indexPath, animated: true)
-    }
-    
-}
-

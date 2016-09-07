@@ -8,8 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		7525430D1D80577F00C457A1 /* ImagePresentable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7525430C1D80577F00C457A1 /* ImagePresentable.swift */; };
+		7525430F1D805A5100C457A1 /* SettingsViewControllerTableViewDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7525430E1D805A5100C457A1 /* SettingsViewControllerTableViewDataSource.swift */; };
+		752543111D805DB100C457A1 /* CaseCountable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 752543101D805DB100C457A1 /* CaseCountable.swift */; };
 		75DAAD6F1D800CDB00BAC0FE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75DAAD6E1D800CDB00BAC0FE /* AppDelegate.swift */; };
-		75DAAD711D800CDB00BAC0FE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75DAAD701D800CDB00BAC0FE /* ViewController.swift */; };
+		75DAAD711D800CDB00BAC0FE /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75DAAD701D800CDB00BAC0FE /* SettingsViewController.swift */; };
 		75DAAD741D800CDB00BAC0FE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 75DAAD721D800CDB00BAC0FE /* Main.storyboard */; };
 		75DAAD761D800CDB00BAC0FE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 75DAAD751D800CDB00BAC0FE /* Assets.xcassets */; };
 		75DAAD791D800CDB00BAC0FE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 75DAAD771D800CDB00BAC0FE /* LaunchScreen.storyboard */; };
@@ -22,9 +24,11 @@
 
 /* Begin PBXFileReference section */
 		7525430C1D80577F00C457A1 /* ImagePresentable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImagePresentable.swift; sourceTree = "<group>"; };
+		7525430E1D805A5100C457A1 /* SettingsViewControllerTableViewDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsViewControllerTableViewDataSource.swift; sourceTree = "<group>"; };
+		752543101D805DB100C457A1 /* CaseCountable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CaseCountable.swift; sourceTree = "<group>"; };
 		75DAAD6B1D800CDB00BAC0FE /* MVVM-Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "MVVM-Example.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		75DAAD6E1D800CDB00BAC0FE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		75DAAD701D800CDB00BAC0FE /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		75DAAD701D800CDB00BAC0FE /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
 		75DAAD731D800CDB00BAC0FE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		75DAAD751D800CDB00BAC0FE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		75DAAD781D800CDB00BAC0FE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -98,7 +102,8 @@
 		75DAAD821D800DBC00BAC0FE /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				75DAAD701D800CDB00BAC0FE /* ViewController.swift */,
+				75DAAD701D800CDB00BAC0FE /* SettingsViewController.swift */,
+				7525430E1D805A5100C457A1 /* SettingsViewControllerTableViewDataSource.swift */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -118,6 +123,7 @@
 				75DAAD901D801BB100BAC0FE /* SwitchPresentable.swift */,
 				7525430C1D80577F00C457A1 /* ImagePresentable.swift */,
 				75DAAD861D80172D00BAC0FE /* CellReuseIdentifierlabel.swift */,
+				752543101D805DB100C457A1 /* CaseCountable.swift */,
 			);
 			name = Protocols;
 			sourceTree = "<group>";
@@ -203,10 +209,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7525430F1D805A5100C457A1 /* SettingsViewControllerTableViewDataSource.swift in Sources */,
 				75DAAD871D80172D00BAC0FE /* CellReuseIdentifierlabel.swift in Sources */,
 				7525430D1D80577F00C457A1 /* ImagePresentable.swift in Sources */,
 				75DAAD911D801BB100BAC0FE /* SwitchPresentable.swift in Sources */,
-				75DAAD711D800CDB00BAC0FE /* ViewController.swift in Sources */,
+				75DAAD711D800CDB00BAC0FE /* SettingsViewController.swift in Sources */,
+				752543111D805DB100C457A1 /* CaseCountable.swift in Sources */,
 				75DAAD841D80124100BAC0FE /* SwitchWithTextTableViewCell.swift in Sources */,
 				75DAAD8D1D80192D00BAC0FE /* TextPresentable.swift in Sources */,
 				75DAAD8A1D8017AA00BAC0FE /* MinionModeViewModel.swift in Sources */,

@@ -68,5 +68,5 @@ class SwitchWithTextTableViewCell: UITableViewCell {
 
 // MARK: - SwitchWithTextTableViewCell: CellReuseIdentifierlabel -
 
-extension SwitchWithTextTableViewCell: CellReuseIdentifierlabel {
+extension SwitchWithTextTableViewCell: CellReuseIdentifierabel {
 }

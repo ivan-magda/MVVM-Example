@@ -20,16 +20,41 @@
  * THE SOFTWARE.
  */
 
-import Foundation
+import UIKit
 
-protocol CellReuseIdentifierabel {
-    static var reuseIdentifier: String { get }
+// MARK: ViewController: UIViewController
+
+class SettingsViewController: UIViewController {
+
+    // MARK: Variables
+    
+    @IBOutlet weak var tableView: UITableView!
+    
+    private let tableViewDataSource = SettingsViewControllerTableViewDataSource()
+    
+    // MARK: Life Cycle
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        configure()
+    }
+    
+    private func configure() {
+        tableView.dataSource = tableViewDataSource
+        tableView.delegate = self
+        
+        tableView.backgroundColor = UIColor(colorLiteralRed: 243.0 / 255.0, green: 228.0 / 255.0,
+                                            blue: 200.0 / 255.0, alpha: 1.0)
+    }
+
 }
 
-extension CellReuseIdentifierabel {
+// MARK: - ViewController: UITableViewDelegate -
+
+extension SettingsViewController: UITableViewDelegate {
     
-    static var reuseIdentifier: String {
-        return "\(self)"
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        tableView.deselectRow(at: indexPath, animated: true)
     }
     
 }
