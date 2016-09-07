@@ -20,23 +20,17 @@
  * THE SOFTWARE.
  */
 
-import UIKit
+import Foundation
 
-// MARK: AppDelegate: UIResponder, UIApplicationDelegate
+protocol CellReuseIdentifierlabel {
+    static var reuseIdentifier: String { get }
+}
 
-@UIApplicationMain
-class AppDelegate: UIResponder, UIApplicationDelegate {
-
-    // MARK: Instance Variables
+extension CellReuseIdentifierlabel {
     
-    var window: UIWindow?
-
-    // MARK: UIApplicationDelegate
-    
-    func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
-        // Override point for customization after application launch.
-        return true
+    static var reuseIdentifier: String {
+        return "\(self)"
     }
-
+    
 }
 

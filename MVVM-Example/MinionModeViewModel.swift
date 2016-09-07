@@ -22,21 +22,32 @@
 
 import UIKit
 
-// MARK: AppDelegate: UIResponder, UIApplicationDelegate
+// MARK: MinionModeViewModel: SwitchWithTextTableViewCellDelegate
 
-@UIApplicationMain
-class AppDelegate: UIResponder, UIApplicationDelegate {
-
-    // MARK: Instance Variables
-    
-    var window: UIWindow?
-
-    // MARK: UIApplicationDelegate
-    
-    func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
-        // Override point for customization after application launch.
-        return true
-    }
-
+struct MinionModeViewModel: SwitchWithTextTableViewCellDelegate {
 }
 
+// MARK: MinionModeViewModel: TextPresentable
+
+extension MinionModeViewModel: TextPresentable {
+    var text: String { return "Minion Mode" }
+    var textColor: UIColor { return .black }
+    var font: UIFont { return .systemFont(ofSize: 17.0) }
+}
+
+// MARK: MinionModeViewModel: SwitchPresentable
+
+extension MinionModeViewModel: SwitchPresentable {
+    
+    var switchOn: Bool { return true }
+    var switchColor: UIColor { return .yellow }
+    
+    func onSwitchToggleOn(on: Bool) {
+        if on {
+            print("The minions are here to stay!!!")
+        } else {
+            print("The minions went out to play!")
+        }
+    }
+    
+}

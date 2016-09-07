@@ -22,21 +22,21 @@
 
 import UIKit
 
-// MARK: AppDelegate: UIResponder, UIApplicationDelegate
+protocol TextPresentable {
+    var text: String { get }
+    var textColor: UIColor { get }
+    var font: UIFont { get }
+}
 
-@UIApplicationMain
-class AppDelegate: UIResponder, UIApplicationDelegate {
-
-    // MARK: Instance Variables
+extension TextPresentable {
     
-    var window: UIWindow?
-
-    // MARK: UIApplicationDelegate
-    
-    func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
-        // Override point for customization after application launch.
-        return true
+    var textColor: UIColor {
+        return .black
     }
-
+    
+    var font: UIFont {
+        return .systemFont(ofSize: 17)
+    }
+    
 }
 
