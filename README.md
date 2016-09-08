@@ -1,13 +1,13 @@
 # MVVM-Example
 
-Protocol-Oriented MVVM examples apps.
+Protocol-Oriented MVVM example apps.
 
 Constains two sample projects:
 * `MVVM-Example` - A Settings screen that has one settings – put your app in Minion Mode!
-* `MVVM-Generic` - A Top Apps application, that presents fetched apps using generics.
+* `MVVM-Generic` - A Top Apps application, that presents fetched apps using generics approach.
 
 ## Instructions 
-Open `MVVM-Example.xcodeproj` and selected desired target, build and run, enjoy!
+Open `MVVM-Example.xcodeproj`, select desired target, build and run, enjoy!
 
 ## Greate Blog Posts
 * [Natasha Murashev](https://www.natashatherobot.com/), ["Introduction to Protocol-Oriented MVVM"](https://realm.io/news/doios-natasha-murashev-protocol-oriented-mvvm/)
