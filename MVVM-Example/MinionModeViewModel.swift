@@ -22,9 +22,7 @@
 
 import UIKit
 
-// MARK: MinionModeViewModel: SwitchWithTextTableViewCellDelegate
-
-struct MinionModeViewModel: SwitchWithTextTableViewCellDelegate {
+struct MinionModeViewModel {
 }
 
 // MARK: MinionModeViewModel: TextPresentable

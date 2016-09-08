@@ -22,10 +22,7 @@
 
 import UIKit
 
-// MARK: SwitchWithTextTableViewCellDelegate: TextPresentable, SwitchPresentable
-
-protocol SwitchWithTextTableViewCellDelegate: TextPresentable, SwitchPresentable, ImagePresentable {
-}
+typealias SwitchWithTextAndImageViewPresentable = TextPresentable & SwitchPresentable & ImagePresentable
 
 // MARK: - SwitchWithTextTableViewCell: UITableViewCell
 
@@ -39,11 +36,11 @@ class SwitchWithTextTableViewCell: UITableViewCell {
     
     // MARK: Private Variables
     
-    private var delegate: SwitchWithTextTableViewCellDelegate?
+    private var delegate: SwitchWithTextAndImageViewPresentable?
     
     // MARK: Public
     
-    func configure(withDelegate delegate: SwitchWithTextTableViewCellDelegate) {
+    func configure(withDelegate delegate: SwitchWithTextAndImageViewPresentable) {
         self.delegate = delegate
         
         backgroundColor = .clear
