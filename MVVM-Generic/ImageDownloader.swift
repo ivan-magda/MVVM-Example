@@ -22,12 +22,18 @@
 
 import UIKit
 
-protocol ImagePresentable {
-    var imageName: String? { get }
-    var imageURL: URL? { get }
+class ImageDownloader {
+    
+    private init() {
+    }
+    
+    static func load(withURL URL: URL, completion: @escaping (_ image: UIImage?) -> ()) {
+        URLSession.shared.dataTask(with: URL) { (data, _, _) in
+            let image = data.flatMap { UIImage(data: $0) }
+            doOnMain {
+                completion(image)
+            }
+        }.resume()
+    }
+    
 }
-
-extension ImagePresentable {
-    var imageURL: URL? { return nil }
-}
-

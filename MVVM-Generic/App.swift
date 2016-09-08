@@ -25,6 +25,8 @@ import Foundation
 struct App {
     var name: String
     var summary: String
+    var category: String
+    var imageURL: URL
 }
 
 extension App {

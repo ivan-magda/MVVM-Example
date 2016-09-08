@@ -23,6 +23,14 @@
 		754B2FED1D8104B100E6A009 /* AppDirector.swift in Sources */ = {isa = PBXBuildFile; fileRef = 754B2FEC1D8104B100E6A009 /* AppDirector.swift */; };
 		754B2FEF1D81065400E6A009 /* AppDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 754B2FEE1D81065400E6A009 /* AppDetailViewController.swift */; };
 		754B2FF11D810CC100E6A009 /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 754B2FF01D810CC100E6A009 /* Utils.swift */; };
+		75B8CBE31D814BF400EC3062 /* TextPresentable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75DAAD8C1D80192D00BAC0FE /* TextPresentable.swift */; };
+		75B8CBE41D814BF800EC3062 /* SwitchPresentable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75DAAD901D801BB100BAC0FE /* SwitchPresentable.swift */; };
+		75B8CBE51D814BFB00EC3062 /* ImagePresentable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7525430C1D80577F00C457A1 /* ImagePresentable.swift */; };
+		75B8CBE71D814ECB00EC3062 /* AppTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75B8CBE61D814ECB00EC3062 /* AppTableViewCell.swift */; };
+		75B8CBEA1D81552100EC3062 /* DetailTextPresentable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75B8CBE91D81552100EC3062 /* DetailTextPresentable.swift */; };
+		75B8CBEB1D81558300EC3062 /* DetailTextPresentable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75B8CBE91D81552100EC3062 /* DetailTextPresentable.swift */; };
+		75B8CBED1D81578500EC3062 /* ImageDownloader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75B8CBEC1D81578500EC3062 /* ImageDownloader.swift */; };
+		75B8CBEF1D8159BC00EC3062 /* AppTableCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75B8CBEE1D8159BC00EC3062 /* AppTableCellViewModel.swift */; };
 		75DAAD6F1D800CDB00BAC0FE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75DAAD6E1D800CDB00BAC0FE /* AppDelegate.swift */; };
 		75DAAD711D800CDB00BAC0FE /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75DAAD701D800CDB00BAC0FE /* SettingsViewController.swift */; };
 		75DAAD741D800CDB00BAC0FE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 75DAAD721D800CDB00BAC0FE /* Main.storyboard */; };
@@ -54,6 +62,10 @@
 		754B2FEC1D8104B100E6A009 /* AppDirector.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDirector.swift; sourceTree = "<group>"; };
 		754B2FEE1D81065400E6A009 /* AppDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDetailViewController.swift; sourceTree = "<group>"; };
 		754B2FF01D810CC100E6A009 /* Utils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
+		75B8CBE61D814ECB00EC3062 /* AppTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppTableViewCell.swift; sourceTree = "<group>"; };
+		75B8CBE91D81552100EC3062 /* DetailTextPresentable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailTextPresentable.swift; sourceTree = "<group>"; };
+		75B8CBEC1D81578500EC3062 /* ImageDownloader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageDownloader.swift; sourceTree = "<group>"; };
+		75B8CBEE1D8159BC00EC3062 /* AppTableCellViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppTableCellViewModel.swift; sourceTree = "<group>"; };
 		75DAAD6B1D800CDB00BAC0FE /* MVVM-Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "MVVM-Example.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		75DAAD6E1D800CDB00BAC0FE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		75DAAD701D800CDB00BAC0FE /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
@@ -94,6 +106,7 @@
 				754B2FE21D80EF8000E6A009 /* Model */,
 				752543281D80600200C457A1 /* Controllers */,
 				752543291D80601000C457A1 /* Assets */,
+				75B8CBE81D814ED000EC3062 /* View */,
 				754B2FE51D80F23B00E6A009 /* Utils */,
 				754B2FDF1D80EF5A00E6A009 /* Resources */,
 				7525432A1D80601900C457A1 /* Supporting Files */,
@@ -142,6 +155,8 @@
 				754B2FE81D80FAC500E6A009 /* App.swift */,
 				754B2FE01D80EF7600E6A009 /* DataManager.swift */,
 				754B2FE61D80FA5800E6A009 /* AppBuilder.swift */,
+				75B8CBEC1D81578500EC3062 /* ImageDownloader.swift */,
+				75B8CBEE1D8159BC00EC3062 /* AppTableCellViewModel.swift */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -153,6 +168,14 @@
 				754B2FF01D810CC100E6A009 /* Utils.swift */,
 			);
 			name = Utils;
+			sourceTree = "<group>";
+		};
+		75B8CBE81D814ED000EC3062 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				75B8CBE61D814ECB00EC3062 /* AppTableViewCell.swift */,
+			);
+			name = View;
 			sourceTree = "<group>";
 		};
 		75DAAD621D800CDB00BAC0FE = {
@@ -226,6 +249,7 @@
 			isa = PBXGroup;
 			children = (
 				75DAAD8C1D80192D00BAC0FE /* TextPresentable.swift */,
+				75B8CBE91D81552100EC3062 /* DetailTextPresentable.swift */,
 				75DAAD901D801BB100BAC0FE /* SwitchPresentable.swift */,
 				7525430C1D80577F00C457A1 /* ImagePresentable.swift */,
 				75DAAD861D80172D00BAC0FE /* CellReuseIdentifierlabel.swift */,
@@ -350,12 +374,19 @@
 			buildActionMask = 2147483647;
 			files = (
 				754B2FEF1D81065400E6A009 /* AppDetailViewController.swift in Sources */,
+				75B8CBED1D81578500EC3062 /* ImageDownloader.swift in Sources */,
 				754B2FE41D80F23700E6A009 /* GCDUtils.swift in Sources */,
 				754B2FF11D810CC100E6A009 /* Utils.swift in Sources */,
 				754B2FED1D8104B100E6A009 /* AppDirector.swift in Sources */,
 				754B2FE71D80FA5800E6A009 /* AppBuilder.swift in Sources */,
+				75B8CBEB1D81558300EC3062 /* DetailTextPresentable.swift in Sources */,
 				754B2FE91D80FAC500E6A009 /* App.swift in Sources */,
+				75B8CBE31D814BF400EC3062 /* TextPresentable.swift in Sources */,
+				75B8CBE71D814ECB00EC3062 /* AppTableViewCell.swift in Sources */,
 				754B2FEB1D80FF5B00E6A009 /* ItemsViewController.swift in Sources */,
+				75B8CBEF1D8159BC00EC3062 /* AppTableCellViewModel.swift in Sources */,
+				75B8CBE41D814BF800EC3062 /* SwitchPresentable.swift in Sources */,
+				75B8CBE51D814BFB00EC3062 /* ImagePresentable.swift in Sources */,
 				754B2FE11D80EF7600E6A009 /* DataManager.swift in Sources */,
 				752543191D805F9D00C457A1 /* AppDelegate.swift in Sources */,
 			);
@@ -366,6 +397,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				7525430F1D805A5100C457A1 /* SettingsViewControllerTableViewDataSource.swift in Sources */,
+				75B8CBEA1D81552100EC3062 /* DetailTextPresentable.swift in Sources */,
 				75DAAD871D80172D00BAC0FE /* CellReuseIdentifierlabel.swift in Sources */,
 				7525430D1D80577F00C457A1 /* ImagePresentable.swift in Sources */,
 				75DAAD911D801BB100BAC0FE /* SwitchPresentable.swift in Sources */,

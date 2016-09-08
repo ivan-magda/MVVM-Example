@@ -55,7 +55,9 @@ class SwitchWithTextTableViewCell: UITableViewCell {
         switchToggle.isOn = delegate.switchOn
         switchToggle.onTintColor = delegate.switchColor
         
-        imageV.image = UIImage(named: delegate.imageName)
+        if let imageName = delegate.imageName {
+            imageV.image = UIImage(named: imageName)
+        }
     }
     
     // MARK: Actions

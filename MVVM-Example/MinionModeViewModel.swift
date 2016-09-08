@@ -55,7 +55,7 @@ extension MinionModeViewModel: SwitchPresentable {
 // MARK: MinionModeViewModel: ImagePresentable
 
 extension MinionModeViewModel: ImagePresentable {
-    var imageName: String {
+    var imageName: String? {
         return "minion"
     }
 }

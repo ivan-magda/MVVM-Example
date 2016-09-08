@@ -41,9 +41,12 @@ class AppDirector {
     // MARK: Private
     
     private func configure() {
-        let appsVC = ItemsViewController(items: [App](), configure: { (cell, app) in
-            cell.textLabel?.text = app.name
-        })
+        let appsVC = ItemsViewController(
+            items: [App](),
+            configure: { (cell: AppTableViewCell<AppTableCellViewModel>, app) in
+                cell.configure(withDelegate: AppTableCellViewModel(app: app))
+            }
+        )
         appsVC.didSelect = showApp
         appsVC.title = "Top Apps"
         
