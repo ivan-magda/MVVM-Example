@@ -9,9 +9,19 @@
 			<key>orderHint</key>
 			<integer>0</integer>
 		</dict>
+		<key>MVVM-Generic.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>1</integer>
+		</dict>
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
+		<key>752543151D805F9D00C457A1</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
 		<key>75DAAD6A1D800CDB00BAC0FE</key>
 		<dict>
 			<key>primary</key>
