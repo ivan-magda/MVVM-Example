@@ -2,9 +2,10 @@
 
 Protocol-Oriented MVVM example apps.
 
-Constains two sample projects:
+Sample projects:
 * `MVVM-Example` - A Settings screen that has one settings – put your app in Minion Mode!
 * `MVVM-Generic` - A Top Apps application, that presents fetched apps using generics approach.
+* `MVVM-Greeting` - A person greeting app, shows name and birthdate.
 
 ## Instructions 
 Open `MVVM-Example.xcodeproj`, select desired target, build and run, enjoy!
@@ -20,3 +21,6 @@ Open `MVVM-Example.xcodeproj`, select desired target, build and run, enjoy!
 ### MVVM-Generic
 <img src="https://github.com/vanyaland/MVVM-Example/blob/master/resources/images/mvvm-generic-apps-list.png">
 <img src="https://github.com/vanyaland/MVVM-Example/blob/master/resources/images/mvvm-generic-detail.png">
+
+### MVVM-Greeting
+<img src="https://github.com/vanyaland/MVVM-Example/blob/master/resources/images/mvvm-greeting.png">

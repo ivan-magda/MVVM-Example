@@ -14,9 +14,19 @@
 			<key>orderHint</key>
 			<integer>1</integer>
 		</dict>
+		<key>MVVM-Greeting.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>2</integer>
+		</dict>
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
+		<key>750F02171D82ACDC0046F808</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
 		<key>752543151D805F9D00C457A1</key>
 		<dict>
 			<key>primary</key>
