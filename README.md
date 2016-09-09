@@ -23,4 +23,5 @@ Open `MVVM-Example.xcodeproj`, select desired target, build and run, enjoy!
 <img src="https://github.com/vanyaland/MVVM-Example/blob/master/resources/images/mvvm-generic-detail.png">
 
 ### MVVM-Greeting
-<img src="https://github.com/vanyaland/MVVM-Example/blob/master/resources/images/mvvm-greeting.png">
+<img src="https://github.com/vanyaland/MVVM-Example/blob/master/resources/images/mvvm-greeting.png"
+width="320" height="560">
