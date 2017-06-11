@@ -3,8 +3,8 @@
 Protocol-Oriented MVVM example apps.
 
 Sample projects:
-* `MVVM-Example` - A Settings screen that has one settings – put your app in Minion Mode!
-* `MVVM-Generic` - A Top Apps application, that presents fetched apps using generics approach.
+* `MVVM-Example`  - A Settings screen that has one settings – put your app in Minion Mode!
+* `MVVM-Generic`  - A Top Apps application, that presents fetched apps using generics approach.
 * `MVVM-Greeting` - A person greeting app, shows name and birthdate.
 
 ## Instructions 
@@ -15,13 +15,14 @@ Open `MVVM-Example.xcodeproj`, select desired target, build and run, enjoy!
 * [Ash Furrow](http://artsy.github.io/), ["MVVM in Swift"](http://artsy.github.io/blog/2015/09/24/mvvm-in-swift/)
 * [objc.io](https://www.objc.io/), ["Intro to MVVM"](https://www.objc.io/issues/13-architecture/mvvm/)
 
-### MVVM-Example
-<img src="https://github.com/vanyaland/MVVM-Example/blob/master/resources/images/mvvm-example-minion.png">
+## Screenshots
 
-### MVVM-Generic
-<img src="https://github.com/vanyaland/MVVM-Example/blob/master/resources/images/mvvm-generic-apps-list.png">
-<img src="https://github.com/vanyaland/MVVM-Example/blob/master/resources/images/mvvm-generic-detail.png">
-
-### MVVM-Greeting
+<img src="https://github.com/vanyaland/MVVM-Example/blob/master/resources/images/mvvm-example-minion.png"
+width="320" height="560">
 <img src="https://github.com/vanyaland/MVVM-Example/blob/master/resources/images/mvvm-greeting.png"
+width="320" height="560">
+
+<img src="https://github.com/vanyaland/MVVM-Example/blob/master/resources/images/mvvm-generic-apps-list.png"
+width="320" height="560">
+<img src="https://github.com/vanyaland/MVVM-Example/blob/master/resources/images/mvvm-generic-detail.png"
 width="320" height="560">
