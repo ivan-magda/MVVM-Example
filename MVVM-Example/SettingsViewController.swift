@@ -25,37 +25,36 @@ import UIKit
 // MARK: ViewController: UIViewController
 
 class SettingsViewController: UIViewController {
-
-    // MARK: Variables
+  
+  // MARK: Variables
+  
+  @IBOutlet weak var tableView: UITableView!
+  
+  private let tableViewDataSource = SettingsViewControllerTableViewDataSource()
+  
+  // MARK: Life Cycle
+  
+  override func viewDidLoad() {
+    super.viewDidLoad()
+    configure()
+  }
+  
+  private func configure() {
+    tableView.dataSource = tableViewDataSource
+    tableView.delegate = self
     
-    @IBOutlet weak var tableView: UITableView!
-    
-    private let tableViewDataSource = SettingsViewControllerTableViewDataSource()
-    
-    // MARK: Life Cycle
-    
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        configure()
-    }
-    
-    private func configure() {
-        tableView.dataSource = tableViewDataSource
-        tableView.delegate = self
-        
-        tableView.backgroundColor = UIColor(colorLiteralRed: 243.0 / 255.0, green: 228.0 / 255.0,
-                                            blue: 200.0 / 255.0, alpha: 1.0)
-    }
-
+    tableView.backgroundColor = UIColor(colorLiteralRed: 243.0 / 255.0, green: 228.0 / 255.0,
+                                        blue: 200.0 / 255.0, alpha: 1.0)
+  }
+  
 }
 
 // MARK: - ViewController: UITableViewDelegate -
 
 extension SettingsViewController: UITableViewDelegate {
-    
-    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        tableView.deselectRow(at: indexPath, animated: true)
-    }
-    
+  
+  func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+    tableView.deselectRow(at: indexPath, animated: true)
+  }
+  
 }
-

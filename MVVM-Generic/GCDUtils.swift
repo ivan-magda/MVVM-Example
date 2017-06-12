@@ -23,14 +23,13 @@
 import Foundation
 
 func doInBackground(_ block: @escaping () -> ()) {
-    DispatchQueue.global(qos: .default).async {
-        block()
-    }
+  DispatchQueue.global(qos: .default).async {
+    block()
+  }
 }
 
 func doOnMain(_ block: @escaping () -> ()) {
-    DispatchQueue.main.async {
-        block()
-    }
+  DispatchQueue.main.async {
+    block()
+  }
 }
-

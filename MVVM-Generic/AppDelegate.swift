@@ -26,22 +26,21 @@ import UIKit
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
+  
+  // MARK: Instance Variables
+  
+  var window: UIWindow?
+  var app: AppDirector?
+  
+  // MARK: UIApplicationDelegate
+  
+  func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
     
-    // MARK: Instance Variables
-    
-    var window: UIWindow?
-    var app: AppDirector?
-    
-    // MARK: UIApplicationDelegate
-    
-    func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
-        
-        if let window = window {
-            app = AppDirector(window: window)
-        }
-        
-        return true
+    if let window = window {
+      app = AppDirector(window: window)
     }
     
+    return true
+  }
+  
 }
-

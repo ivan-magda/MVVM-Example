@@ -23,14 +23,11 @@
 import Foundation
 
 protocol CellReuseIdentifierabel {
-    static var reuseIdentifier: String { get }
+  static var reuseIdentifier: String { get }
 }
 
 extension CellReuseIdentifierabel {
-    
-    static var reuseIdentifier: String {
-        return "\(self)"
-    }
-    
+  static var reuseIdentifier: String {
+    return "\(self)"
+  }
 }
-

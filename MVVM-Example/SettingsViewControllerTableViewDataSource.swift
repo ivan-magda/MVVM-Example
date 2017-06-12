@@ -23,28 +23,28 @@
 import UIKit
 
 class SettingsViewControllerTableViewDataSource: NSObject {
-
-    enum Setting: Int, CaseCountable {
-        case MinionMode
-    }
-    
+  
+  enum Setting: Int, CaseCountable {
+    case MinionMode
+  }
+  
 }
 
 extension SettingsViewControllerTableViewDataSource: UITableViewDataSource {
-    
-    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return Setting.caseCount
+  
+  func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+    return Setting.caseCount
+  }
+  
+  func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+    switch Setting(rawValue: indexPath.row)! {
+    case .MinionMode:
+      let identifier = SwitchWithTextTableViewCell.reuseIdentifier
+      let cell = tableView.dequeueReusableCell(withIdentifier: identifier) as! SwitchWithTextTableViewCell
+      cell.configure(withDelegate: MinionModeViewModel())
+      
+      return cell
     }
-    
-    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        switch Setting(rawValue: indexPath.row)! {
-        case .MinionMode:
-            let identifier = SwitchWithTextTableViewCell.reuseIdentifier
-            let cell = tableView.dequeueReusableCell(withIdentifier: identifier) as! SwitchWithTextTableViewCell
-            cell.configure(withDelegate: MinionModeViewModel())
-            
-            return cell
-        }
-    }
-    
+  }
+  
 }

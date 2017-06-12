@@ -23,35 +23,35 @@
 import UIKit
 
 class AppDetailViewController: UIViewController {
+  
+  // MARK: Outlets
+  
+  @IBOutlet weak var header: UILabel!
+  @IBOutlet weak var summary: UILabel!
+  
+  // MARK: Variables
+  
+  var app: App!
+  
+  // MARK: Life Cycle
+  
+  override func viewDidLoad() {
+    super.viewDidLoad()
     
-    // MARK: Outlets
+    title = "Detail"
     
-    @IBOutlet weak var header: UILabel!
-    @IBOutlet weak var summary: UILabel!
+    header.text = app.name
+    summary.text = app.summary
+  }
+  
+  override func viewDidLayoutSubviews() {
+    super.viewDidLayoutSubviews()
     
-    // MARK: Variables
-    
-    var app: App!
-    
-    // MARK: Life Cycle
-    
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        
-        title = "Detail"
-        
-        header.text = app.name
-        summary.text = app.summary
+    if let containerView = header.superview {
+      NSLayoutConstraint.activate([
+        containerView.widthAnchor.constraint(equalTo: view.widthAnchor, multiplier: 1.0)
+      ])
     }
-    
-    override func viewDidLayoutSubviews() {
-        super.viewDidLayoutSubviews()
-        
-        if let containerView = header.superview {
-            NSLayoutConstraint.activate([
-                containerView.widthAnchor.constraint(equalTo: view.widthAnchor, multiplier: 1.0)]
-            )
-        }
-    }
-    
+  }
+  
 }

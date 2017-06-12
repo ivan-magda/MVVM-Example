@@ -23,18 +23,16 @@
 import Foundation
 
 struct App {
-    var name: String
-    var summary: String
-    var category: String
-    var imageURL: URL
+  var name: String
+  var summary: String
+  var category: String
+  var imageURL: URL
 }
 
 extension App {
-    
-    static func all(_ completion: @escaping ([App]?) -> ()) {
-        DataManager.jsonForResource(name: "topapps") { json in
-            completion(AppBuilder.appsFrom(json: json ?? [:]))
-        }
+  static func all(_ completion: @escaping ([App]?) -> ()) {
+    DataManager.jsonForResource("topapps") { json in
+      completion(AppBuilder.apps(from: json ?? [:]))
     }
-    
+  }
 }

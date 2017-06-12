@@ -9,20 +9,19 @@
 import UIKit
 
 protocol DetailTextPresentable: TextPresentable {
-    var detailText: String { get }
-    var detailTextColor: UIColor { get }
-    var detailFont: UIFont { get }
+  var detailText: String { get }
+  var detailTextColor: UIColor { get }
+  var detailFont: UIFont { get }
 }
 
 extension DetailTextPresentable {
-    
-    var detailTextColor: UIColor {
-        return .lightGray
-    }
-    
-    var detailFont: UIFont {
-        return .systemFont(ofSize: 14)
-    }
-    
+  
+  var detailTextColor: UIColor {
+    return .lightGray
+  }
+  
+  var detailFont: UIFont {
+    return .systemFont(ofSize: 14)
+  }
+  
 }
-

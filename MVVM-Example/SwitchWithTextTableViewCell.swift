@@ -27,42 +27,42 @@ typealias SwitchWithTextAndImageViewPresentable = TextPresentable & SwitchPresen
 // MARK: - SwitchWithTextTableViewCell: UITableViewCell
 
 class SwitchWithTextTableViewCell: UITableViewCell {
+  
+  // MARK: Outlets
+  
+  @IBOutlet weak var label: UILabel!
+  @IBOutlet weak var switchToggle: UISwitch!
+  @IBOutlet weak var imageV: UIImageView!
+  
+  // MARK: Private Variables
+  
+  private var delegate: SwitchWithTextAndImageViewPresentable?
+  
+  // MARK: Public
+  
+  func configure(withDelegate delegate: SwitchWithTextAndImageViewPresentable) {
+    self.delegate = delegate
     
-    // MARK: Outlets
+    backgroundColor = .clear
     
-    @IBOutlet weak var label: UILabel!
-    @IBOutlet weak var switchToggle: UISwitch!
-    @IBOutlet weak var imageV: UIImageView!
+    label.text = delegate.text
+    label.textColor = delegate.textColor
+    label.font = delegate.font
     
-    // MARK: Private Variables
+    switchToggle.isOn = delegate.switchOn
+    switchToggle.onTintColor = delegate.switchColor
     
-    private var delegate: SwitchWithTextAndImageViewPresentable?
-    
-    // MARK: Public
-    
-    func configure(withDelegate delegate: SwitchWithTextAndImageViewPresentable) {
-        self.delegate = delegate
-        
-        backgroundColor = .clear
-        
-        label.text = delegate.text
-        label.textColor = delegate.textColor
-        label.font = delegate.font
-        
-        switchToggle.isOn = delegate.switchOn
-        switchToggle.onTintColor = delegate.switchColor
-        
-        if let imageName = delegate.imageName {
-            imageV.image = UIImage(named: imageName)
-        }
+    if let imageName = delegate.imageName {
+      imageV.image = UIImage(named: imageName)
     }
-    
-    // MARK: Actions
-    
-    @IBAction func onSwitchToggle(_ sender: UISwitch) {
-        delegate?.onSwitchToggleOn(on: sender.isOn)
-    }
-    
+  }
+  
+  // MARK: Actions
+  
+  @IBAction func onSwitchToggle(_ sender: UISwitch) {
+    delegate?.onSwitchToggleOn(on: sender.isOn)
+  }
+  
 }
 
 // MARK: - SwitchWithTextTableViewCell: CellReuseIdentifierlabel -
